@@ -1,17 +1,5 @@
 # PENIOT: Penetration Testing Tool for IoT
 
-#### Table of Contents
-* [Project Description](#Project-Description)
-    * [What is PENIOT?](#What-is-PENIOT)
-    * [Why is PENIOT required?](#Why-is-PENIOT-required)
-    * [What does PENIOT provide?](#What-does-PENIOT-provide)
-* [Build Instructions](#Build-Instructions)
-* [Documentation](#Documentation)
-* [Testing](#Testing)
-* [Contributors](#Contributors)
-* [Developer's Note](#Developers-Note)
-* [Project Poster](#Project-Poster)
-
 ## Project Description
 
 ### What is PENIOT?
@@ -92,7 +80,7 @@ In short, you need the followings before running installation script.
 
 You can build project in your local by executing following codes.
 ```shell
-$ git clone git@github.com:yakuza8/peniot.git
+$ git clone https://github.com/Transmetal/peniot
 $ cd peniot
 $ python setup.py install
 ```
@@ -115,47 +103,8 @@ $ python src/peniot.py
 After running this command, you should see an user interface appeared. Then you can explore the tool
 by yourself.
 
-## Documentation
-You can find *Design Overview Document* and *Final Design Document* under the **resources/documents** folder.
-Several diagrams are attached under the **resources/diagrams** folder. Here is the simplest
-representation of how PENIOT is separated modules and how it is designed.
-
-<p align="center">
-<img src="/resources/diagrams/peniot_structure_component_diagram.png">
-</p>
-
 ## Testing
 Most of the attacks have their own sample integration tests under their attack scripts. In
 order to run those tests, you need to have a running program for the target protocol. We try to
 provide you with example programs for each protocol where one can find server/client scripts
 under each protocol's **examples** directory. 
-
-## Contributors
-This project is contributed by the following project members:
-- Berat Cankar
-- Bilgehan Bingöl
-- Doğukan Çavdaroğlu
-- Ebru Çelebi
-
-and is supervised by **Pelin Angın**.
-
-## Developer's Note
-Firstly, let me thank you for visiting our project site. We tried to provide you how one can
-penetrate and hack IoT devices over the protocols they use thanks to end-to-end security attacks.
-Our main purpose is to hack those devices with generic security attacks. One can simply find
-specific attacks for any protocol, but as I said ours was to provide generic and extendable
-penetration framework. 
-
-Secondly, PENIOT is developed with **Python2.7**. And our code maybe had gone into *legacy state*.
-But nevertheless, we wanted to share it to public so that anyone could get insight and
-inspiration to develop their own penetration tools, that is what makes us happy if it could happen.
-
-Thirdly, we also will try to port our tool into **Python3** if we can spare necessary time for that.
-When it happens, we will inform it from this page as well. Thanks for your attention.
-
-Developer: @yakuza8 (Berat Cankar)
-
-## Project Poster
-<p align="center">
-<img src="/resources/peniot_vectorized.svg">
-</p>
